@@ -1,0 +1,15 @@
+version: '3'
+services:
+  seifdb:
+    image: postgres
+    container_name: seif-db
+    expose:
+      - 5432
+    ports:
+    - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=seifdb
+  seifbackend:
+    

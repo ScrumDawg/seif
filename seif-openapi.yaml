@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Seif Project Management Rest-API
+  description: This  is the Rest-API of the Seif Project Management Tool
+  contact:
+    email: ma.abdelmola@gmail.com
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/seif-pm/rest/api/v1
+  description: The local Developement URL
+
+paths: {}
+
+components:
+  schemas:
+
+    Project:
+      type: object
+      properties:
+        id:
+          type: integer
+        projectName:
+          type: string
+        projectKey:
+          type: string
+        projectDescription:
+          type: string
+        projectStatus:
+          type: string
+
+
